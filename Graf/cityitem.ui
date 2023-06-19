@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>cityitem</class>
+	<widget class="QWidget" name="cityitem">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>474</width>
+				<height>474</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>Form</string>
+		</property>
+		<property name="styleSheet">
+			<string notr="true">background-color: rgb(170, 170, 139);</string>
+		</property>
+		<widget class="QPushButton" name="back">
+			<property name="geometry">
+				<rect>
+					<x>10</x>
+					<y>420</y>
+					<width>451</width>
+					<height>40</height>
+				</rect>
+			</property>
+			<property name="font">
+				<font>
+					<family>Cascadia Mono</family>
+					<pointsize>15</pointsize>
+				</font>
+			</property>
+			<property name="styleSheet">
+				<string notr="true">background-color: rgb(85, 170, 127);</string>
+			</property>
+			<property name="text">
+				<string>Вернуться в меню</string>
+			</property>
+		</widget>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>

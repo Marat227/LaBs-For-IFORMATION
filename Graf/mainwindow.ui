@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>MainWindow</class>
+	<widget class="QMainWindow" name="MainWindow">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>1025</width>
+				<height>494</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>MainWindow</string>
+		</property>
+		<property name="styleSheet">
+			<string notr="true">background-color: rgb(169, 170, 156);</string>
+		</property>
+		<widget class="QWidget" name="centralwidget">
+			<widget class="QLabel" name="Display">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>10</y>
+						<width>441</width>
+						<height>91</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+						<kerning>true</kerning>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">
+						background-color: rgb(85, 170, 127);
+					</string>
+				</property>
+				<property name="text">
+					<string>Введите количество вершин:</string>
+				</property>
+				<property name="alignment">
+					<set>Qt::AlignCenter</set>
+				</property>
+			</widget>
+			<widget class="QTableWidget" name="LinksTable">
+				<property name="geometry">
+					<rect>
+						<x>10</x>
+						<y>10</y>
+						<width>561</width>
+						<height>405</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>calibri</family>
+						<pointsize>-1</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">
+						background: #dedede;
+						border: solid 2px #94fa7f;
+						border-radius: 3px;
+						font-family: calibri;
+						font-size: 20px;
+						color:#3d3d3d;
+						font-weight: bold;
+						Alignment: center;
+					</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Create">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>160</y>
+						<width>441</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(83, 170, 123);</string>
+				</property>
+				<property name="text">
+					<string>Создать таблицу</string>
+				</property>
+			</widget>
+			<widget class="QLineEdit" name="City">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>110</y>
+						<width>441</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background: #dedede;</string>
+				</property>
+				<property name="text">
+					<string/>
+				</property>
+				<property name="alignment">
+					<set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Accept_2">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>260</y>
+						<width>441</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Удалить вершину</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Accept">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>310</y>
+						<width>441</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Добавить вершину</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Answer">
+				<property name="geometry">
+					<rect>
+						<x>10</x>
+						<y>430</y>
+						<width>561</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Метод ветвей и границ</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Visual">
+				<property name="enabled">
+					<bool>true</bool>
+				</property>
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>210</y>
+						<width>441</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="sizePolicy">
+					<sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+						<horstretch>0</horstretch>
+						<verstretch>0</verstretch>
+					</sizepolicy>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Показать граф</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Back_menu">
+				<property name="geometry">
+					<rect>
+						<x>810</x>
+						<y>460</y>
+						<width>211</width>
+						<height>31</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Выход</string>
+				</property>
+			</widget>
+			<widget class="QLabel" name="Fon">
+				<property name="geometry">
+					<rect>
+						<x>6</x>
+						<y>2</y>
+						<width>1021</width>
+						<height>491</height>
+					</rect>
+				</property>
+				<property name="text">
+					<string/>
+				</property>
+				<property name="pixmap">
+					<pixmap>C:/Users/Полина/Pictures/Saved Pictures/0f7b88f6743955daa2ed6e6c31a91b3c.png</pixmap>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="depth">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>410</y>
+						<width>221</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Обход в глубину</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="width">
+				<property name="geometry">
+					<rect>
+						<x>810</x>
+						<y>410</y>
+						<width>211</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Обход в ширину</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="Deikstra">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>360</y>
+						<width>441</width>
+						<height>40</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Алгоритм Дейкстры</string>
+				</property>
+			</widget>
+			<widget class="QPushButton" name="depth_2">
+				<property name="geometry">
+					<rect>
+						<x>580</x>
+						<y>460</y>
+						<width>221</width>
+						<height>31</height>
+					</rect>
+				</property>
+				<property name="font">
+					<font>
+						<family>Cascadia Mono</family>
+						<pointsize>15</pointsize>
+						<weight>75</weight>
+						<bold>true</bold>
+					</font>
+				</property>
+				<property name="styleSheet">
+					<string notr="true">background-color: rgb(85, 170, 127);</string>
+				</property>
+				<property name="text">
+					<string>Заполнить таблицу</string>
+				</property>
+			</widget>
+			<zorder>Fon</zorder>
+			<zorder>LinksTable</zorder>
+			<zorder>Create</zorder>
+			<zorder>City</zorder>
+			<zorder>Accept_2</zorder>
+			<zorder>Accept</zorder>
+			<zorder>Answer</zorder>
+			<zorder>Visual</zorder>
+			<zorder>Display</zorder>
+			<zorder>Back_menu</zorder>
+			<zorder>depth</zorder>
+			<zorder>width</zorder>
+			<zorder>Deikstra</zorder>
+			<zorder>depth_2</zorder>
+		</widget>
+	</widget>
+	<resources/>
+	<connections>
+		<connection>
+			<sender>Back_menu</sender>
+			<signal>clicked()</signal>
+			<receiver>MainWindow</receiver>
+			<slot>close()</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>937</x>
+					<y>467</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>805</x>
+					<y>458</y>
+				</hint>
+			</hints>
+		</connection>
+	</connections>
+</ui>
